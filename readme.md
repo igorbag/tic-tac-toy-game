@@ -19,3 +19,7 @@ And the application will be running in [http://localhost:8080](http://localhost:
 ports:
   - 9090:80
 ``` 
+
+**Run without Docker:** 
+php composer 
+install and php artisan serve.
