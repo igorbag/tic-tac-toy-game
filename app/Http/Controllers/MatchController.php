@@ -200,12 +200,12 @@ class MatchController extends Controller {
     * @return Integer
     */
     private function getNextRegisterFromMatch(){
-        $getLastRegister = Match::latest()
-        ->first();
+        $getLastRegister = Match::latest()->first();
+        
         $idMatch = 1;
-        if($getLastRegister != null){
+        if($getLastRegister != null)
             $idMatch = (string) $getLastRegister->id+1;            
-        }
+        
         return $idMatch; 
     }
     
